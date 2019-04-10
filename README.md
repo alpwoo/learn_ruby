@@ -1,6 +1,8 @@
 Test First Ruby -- RSpec 3 Edition
 ==========
 
+Solutions by Alptekin Aydogan
+
 ### Set up instructions
 
 1. Fork this repo

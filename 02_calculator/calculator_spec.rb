@@ -76,24 +76,51 @@ end
 # Extra Credit Test-Driving Bonus:
 # once the above tests pass,
 # write tests and code for the following:
+=begin
+describe "multiply" do
+  it "multiplies 0 and 0" do
+    expect(multiply(0,0)).to eq(0)
+  end
 
-describe "#multiply" do
+  it "multiplies 2 and 2" do
+    expect(multiply(2,2)).to eq(4)
+  end
 
-  it "multiplies two numbers"
+  it "multiplies positive numbers" do
+    expect(multiply(2,6)).to eq(12)
+  end
+end
+=end
 
-  it "multiplies several numbers"
-  
+describe "multiply" do
+
+  it "multiplies positive numbers" do
+    expect(multiply([2, 4, 8])).to eq(64)
+  end
+
 end
 
-describe "#power" do
-  it "raises one number to the power of another number"
+describe "power" do
+it "raises a to the power of b" do
+  expect(power(2, 5)).to eq(32)
+end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
-describe "#factorial" do
-  it "computes the factorial of 0"
-  it "computes the factorial of 1"
-  it "computes the factorial of 2"
-  it "computes the factorial of 5"
-  it "computes the factorial of 10"
+describe "factorial" do
+  it "calculates the factorial of 0" do
+    expect(factorial(0)).to eq(1)
+  end
+  it "calculates the factorial of 1" do
+    expect(factorial(1)).to eq(1)
+  end
+  it "calculates the factorial of 2" do
+    expect(factorial(2)).to eq(2)
+  end
+  it "calculates the factorial of 5" do
+    expect(factorial(5)).to eq(120)
+  end
+  it "calculates the factorial of 10" do
+    expect(factorial(10)).to eq(3628800)
+  end
 end
